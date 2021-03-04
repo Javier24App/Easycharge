@@ -1,0 +1,44 @@
+1-OBJETIVE GOAL 
+Que objetivo se busca con el proyecto.
+
+2-DESCRIPCION DETALLADA PRODUCTO
+
+
+3-ASSUMPTION Y HIPOTESIS 
+
+ejemplo crear una web de servicio de compras en comercio local online tipo glovo
+
+4-METRICAS
+
+En este proyecto no vamos a trabajar con metricas, en el mundo real si
+
+5-REQUERIMENTS & USER HISTORIES Tareas a hacer 
+
+Recopilacion de informacion
+stimuli
+research
+
+6-ANALITICAS  REQUERIMENT
+
+Agregar todas las analiticas, medidas de opciones- Con Amplitude se mide los clicks, gente que se agrega etc...
+
+USER INTERACTION & DESING 
+se enlaza miro 
+
+QUESTIONS
+en reuniones con el equipo apuntar todas las cuestiones ques rutjan para que no se olviden.
+
+
+El PRD es el documento que enlaza toda la información, el PRD no se rellena de una vez, va creciendo. las Primeras tareas 1 2 y 3 y hacer el panel del stimuli que es investigar a la competencia y apuntar todas las cosas que me gusten, capturas de pantalla con la utilidad de miro, las urls. etc.. 
+En el tablero de discovery se anotan notas con ideas que se me ocurran, cosas que me gusten, también preguntas sobre el proyecto. 
+Despues el panel del user flow y user persona. 
+
+Luego panel navigation, decicir y anotar el funcionamiento de la web.
+
+Cuando este todo claro, despues se empezará con los wireframes.
+(Gamificacion, generar premios para que sigan usando el servicio)idea al matgen del proyecto
+
+
+
+crear un google doc con este documento.
+

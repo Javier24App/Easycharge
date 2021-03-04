@@ -1,0 +1,898 @@
+.mediaViewInfo {
+	--web-view-name: LANDING HOME;
+	--web-view-id: LANDING_HOME;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: LANDING_HOME;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.LANDING_HOME_Class {
+	position: absolute;
+	width: 375px;
+	height: 3132px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: LANDING HOME;
+	--web-view-id: LANDING_HOME;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+.Comp_menu_mobile_Class {
+	position: absolute;
+	width: 375px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.LOGO_V1_Class {
+	position: absolute;
+	width: 375px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.menu_Class {
+	fill: rgba(0,0,0,1);
+	stroke: rgba(112,112,112,0.22);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.menu {
+	overflow: visible;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 11px;
+	top: 17px;
+	transform: matrix(1,0,0,1,0,0);
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: LANDING_MENU_LATERAL.html;
+	cursor: pointer;
+}
+.account-circle_Class {
+	fill: rgba(0,0,0,1);
+	stroke: rgba(112,112,112,0.22);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.account-circle {
+	overflow: visible;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 336px;
+	top: 17px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.El_futuro_es_ahora_Class {
+	left: 100px;
+	top: 92px;
+	position: absolute;
+	overflow: visible;
+	width: 178px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(0,0,0,1);
+}
+.Carga_Wireless_________Aparca__Class {
+	left: 116px;
+	top: 128px;
+	position: absolute;
+	overflow: visible;
+	width: 146px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 18px;
+	color: rgba(0,0,0,1);
+	text-transform: capitalize;
+}
+.DriversMain-Content-Slider1_Class {
+	position: absolute;
+	width: 375px;
+	height: 284px;
+	left: 0px;
+	top: 384px;
+	overflow: visible;
+}
+.Comp_boton_conductor_Class {
+	position: absolute;
+	width: 125px;
+	height: 46px;
+	left: 124px;
+	top: 2425px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: LANDING_CONDUCTORES.html;
+	cursor: pointer;
+}
+.boton_conductor_Class {
+	fill: rgba(255,183,70,1);
+}
+.boton_conductor {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.42));
+	position: absolute;
+	overflow: visible;
+	width: 143px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+.Texto_conductor_Class {
+	left: 24px;
+	top: 16px;
+	position: absolute;
+	overflow: visible;
+	width: 78px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+}
+.Comp_boton_empresa_Class {
+	position: absolute;
+	width: 125px;
+	height: 46px;
+	left: 122px;
+	top: 2700px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: LANDING_NEGOCIO.html;
+	cursor: pointer;
+}
+.boton_empresa_Class {
+	fill: rgba(70,198,255,1);
+}
+.boton_empresa {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.38));
+	position: absolute;
+	overflow: visible;
+	width: 143px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+.texto_empresa_Class {
+	left: 35.455px;
+	top: 16px;
+	position: absolute;
+	overflow: visible;
+	width: 57px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+}
+.Rectngulo_1_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectngulo_1 {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 162px;
+	left: 0px;
+	top: 189px;
+}
+.Llega_la_revolucin_del_vehculo_Class {
+	left: 39px;
+	top: 203px;
+	position: absolute;
+	overflow: visible;
+	width: 299px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.ELIGE_TU_MODALIDAD__Class {
+	left: 98px;
+	top: 724px;
+	position: absolute;
+	overflow: visible;
+	width: 154px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 14px;
+	color: rgba(0,0,0,1);
+}
+.ID68910111_2658961984115208_67_Class {
+	position: absolute;
+	width: 375px;
+	height: 178px;
+	left: 0px;
+	top: 911px;
+	overflow: visible;
+}
+.Drivers_Route_Planner_Web_Class {
+	position: absolute;
+	width: 375px;
+	height: 309px;
+	left: 0px;
+	top: 1480px;
+	overflow: visible;
+}
+.Rectngulo_2_Class {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectngulo_2 {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 3px;
+	left: 303px;
+	top: 1412px;
+}
+.Comp_Easy_Pay_Class {
+	position: absolute;
+	width: 375px;
+	height: 168px;
+	left: 0px;
+	top: 1854px;
+	overflow: visible;
+}
+.Rectngulo_4_Class {
+	fill: rgba(255,255,255,1);
+}
+.Rectngulo_4 {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 168px;
+	left: 0px;
+	top: 0px;
+}
+._Simple_y_prctico__Para_que_te_Class {
+	left: 40px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 307px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+}
+.ID1366_2000_Class {
+	position: absolute;
+	width: 375px;
+	height: 187px;
+	left: 0px;
+	top: 2087px;
+	overflow: visible;
+}
+.img5-smart3-desktop_Class {
+	position: absolute;
+	width: 375px;
+	height: 167px;
+	left: 0px;
+	top: 2468px;
+	overflow: visible;
+}
+.daimler-ecascadia_Class {
+	position: absolute;
+	width: 375px;
+	height: 167px;
+	left: 0px;
+	top: 2737px;
+	overflow: visible;
+}
+.ELIGE_TU_MODALIDAD_Class {
+	left: 102px;
+	top: 2339px;
+	position: absolute;
+	overflow: visible;
+	width: 173px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(0,0,0,1);
+}
+.Componente_14__1_Class {
+	position: absolute;
+	width: 375px;
+	height: 178px;
+	left: 0px;
+	top: 1154px;
+	overflow: visible;
+}
+.Controla_con_nuestra_Easy_App__Class {
+	left: 35px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 289px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+}
+.Componente_10__1_Class {
+	position: absolute;
+	width: 375px;
+	height: 126px;
+	left: 0px;
+	top: 52px;
+	overflow: visible;
+}
+.Rectngulo_8_Class {
+	opacity: 0.5;
+	fill: rgba(255,255,255,1);
+}
+.Rectngulo_8 {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 126px;
+	left: 0px;
+	top: 0px;
+}
+.play_Class {
+	position: absolute;
+	width: 138px;
+	height: 43px;
+	left: 196px;
+	top: 39px;
+	overflow: visible;
+}
+.appstore_Class {
+	position: absolute;
+	width: 176px;
+	height: 69px;
+	left: 17px;
+	top: 23px;
+	overflow: visible;
+}
+.Comp_boton_empresa_b_Class {
+	position: absolute;
+	width: 125px;
+	height: 46px;
+	left: 122px;
+	top: 1352px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: LANDING_NEGOCIO.html;
+	cursor: pointer;
+}
+.boton_empresa_b_Class {
+	fill: rgba(238,246,239,1);
+}
+.boton_empresa_b {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.38));
+	position: absolute;
+	overflow: visible;
+	width: 143px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+.texto_empresa_b_Class {
+	left: 29.5px;
+	top: 16px;
+	position: absolute;
+	overflow: visible;
+	width: 67px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+}
+.Componente_11__1_Class {
+	position: absolute;
+	width: 375px;
+	height: 156px;
+	left: 0px;
+	top: 2976px;
+	overflow: visible;
+}
+.Grupo_2_Class {
+	position: absolute;
+	width: 375px;
+	height: 126px;
+	left: 0px;
+	top: 30px;
+	overflow: visible;
+}
+.Rectngulo_17_Class {
+	fill: rgba(180,178,178,1);
+}
+.Rectngulo_17 {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 118px;
+	left: 0px;
+	top: 8px;
+}
+.Componente_22__7_Class {
+	position: absolute;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 62px;
+	overflow: visible;
+}
+.Rectngulo_18_Class {
+	fill: transparent;
+}
+.Rectngulo_18 {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+}
+.FaQ_Class {
+	left: 34px;
+	top: 4px;
+	position: absolute;
+	overflow: visible;
+	width: 23px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+.Componente_22__6_Class {
+	position: absolute;
+	width: 90px;
+	height: 22px;
+	left: 76px;
+	top: 62px;
+	overflow: visible;
+}
+.Rectngulo_18_cb_Class {
+	fill: transparent;
+}
+.Rectngulo_18_cb {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+}
+.ID247_Att_Class {
+	left: 21px;
+	top: 4px;
+	position: absolute;
+	overflow: visible;
+	width: 49px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+.Componente_22__3_Class {
+	position: absolute;
+	width: 90px;
+	height: 22px;
+	left: 76px;
+	top: 39px;
+	overflow: visible;
+}
+.Rectngulo_18_ce_Class {
+	fill: transparent;
+}
+.Rectngulo_18_ce {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+}
+.Negocio_Class {
+	left: 23px;
+	top: 4px;
+	position: absolute;
+	overflow: visible;
+	width: 45px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+.Componente_22__4_Class {
+	position: absolute;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 40px;
+	overflow: visible;
+}
+.Rectngulo_18_ch_Class {
+	fill: transparent;
+}
+.Rectngulo_18_ch {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+}
+.Saber_ms_Class {
+	left: 18px;
+	top: 4px;
+	position: absolute;
+	overflow: visible;
+	width: 55px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+.Componente_22__5_Class {
+	position: absolute;
+	width: 90px;
+	height: 22px;
+	left: 76px;
+	top: 18px;
+	overflow: visible;
+}
+.Rectngulo_18_ck_Class {
+	fill: transparent;
+}
+.Rectngulo_18_ck {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+}
+.Conductor_Class {
+	left: 16px;
+	top: 4px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+.Componente_22_Class {
+	position: absolute;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 17px;
+	overflow: visible;
+}
+.Rectngulo_18_cn_Class {
+	fill: transparent;
+}
+.Rectngulo_18_cn {
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+}
+.Componente_10__4_Class {
+	position: absolute;
+	width: 375px;
+	height: 126px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectngulo_8_cp_Class {
+	opacity: 0.5;
+	fill: transparent;
+}
+.Rectngulo_8_cp {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 126px;
+	left: 0px;
+	top: 0px;
+}
+.play_cq_Class {
+	position: absolute;
+	width: 79px;
+	height: 30px;
+	left: 255px;
+	top: 57px;
+	overflow: visible;
+}
+.appstore_cr_Class {
+	position: absolute;
+	width: 109px;
+	height: 43px;
+	left: 240px;
+	top: 14px;
+	overflow: visible;
+}
+.Mapa_web__informacin_local_y_p_Class {
+	left: 11px;
+	top: 106px;
+	position: absolute;
+	overflow: visible;
+	width: 345px;
+	white-space: nowrap;
+	line-height: 16px;
+	margin-top: -1px;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 14px;
+	color: rgba(33,133,208,1);
+}
+.Grupo_1_Class {
+	position: absolute;
+	width: 375px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectngulo_5_Class {
+	fill: rgba(180,178,178,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectngulo_5 {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 38px;
+	left: 0px;
+	top: 0px;
+}
+.twitter_Class {
+	fill: rgba(255,255,255,1);
+}
+.twitter {
+	overflow: visible;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 73px;
+	top: 7px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.facebook_Class {
+	fill: rgba(255,255,255,1);
+}
+.facebook {
+	overflow: visible;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 9px;
+	top: 7px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.instagram_Class {
+	fill: rgba(255,255,255,1);
+}
+.instagram {
+	overflow: visible;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 41px;
+	top: 7px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Instala__nuestra__App_Class {
+	left: 194px;
+	top: 57px;
+	position: absolute;
+	overflow: visible;
+	width: 43px;
+	white-space: nowrap;
+	line-height: 16px;
+	margin-top: -2px;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: lighter;
+	font-size: 12px;
+	color: rgba(255,255,255,1);
+}
+.Componente_10__3_Class {
+	position: absolute;
+	width: 375px;
+	height: 126px;
+	left: 0px;
+	top: 3006px;
+	overflow: visible;
+}
+.Rectngulo_8_c_Class {
+	opacity: 0.5;
+	fill: transparent;
+}
+.Rectngulo_8_c {
+	position: absolute;
+	overflow: visible;
+	width: 375px;
+	height: 126px;
+	left: 0px;
+	top: 0px;
+}
+.play_c_Class {
+	position: absolute;
+	width: 79px;
+	height: 30px;
+	left: 255px;
+	top: 57px;
+	overflow: visible;
+}
+.appstore_c_Class {
+	position: absolute;
+	width: 109px;
+	height: 43px;
+	left: 240px;
+	top: 14px;
+	overflow: visible;
+}
+.Comp_boton_empresa_c_Class {
+	position: absolute;
+	width: 125px;
+	height: 46px;
+	left: 188px;
+	top: 803px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: LANDING_NEGOCIO.html;
+	cursor: pointer;
+}
+.boton_empresa_c_Class {
+	fill: rgba(70,198,255,1);
+}
+.boton_empresa_c {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.38));
+	position: absolute;
+	overflow: visible;
+	width: 143px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+.texto_empresa_c_Class {
+	left: 35.455px;
+	top: 16px;
+	position: absolute;
+	overflow: visible;
+	width: 57px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+}
+.Comp_boton_conductor_c_Class {
+	position: absolute;
+	width: 125px;
+	height: 46px;
+	left: 35px;
+	top: 803px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: LANDING_CONDUCTORES.html;
+	cursor: pointer;
+}
+.boton_conductor_c_Class {
+	fill: rgba(255,183,70,1);
+}
+.boton_conductor_c {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.42));
+	position: absolute;
+	overflow: visible;
+	width: 143px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+.Texto_conductor_c_Class {
+	left: 24px;
+	top: 16px;
+	position: absolute;
+	overflow: visible;
+	width: 78px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+}
