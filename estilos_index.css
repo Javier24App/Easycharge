@@ -634,4 +634,31 @@ span {
   text-align: center;
 
 }
+/* ----------------hogar */
+.listas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20%;
+  
+}
+.ctu_precio_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#garantia{
+ text-align:center;
+ 
+}
+
+/* ----------------fuera casa */
+#registro_boton{
+  background-color: #79C93A;
+  color: white;
+}
+
+
 
