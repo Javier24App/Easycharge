@@ -11,3 +11,4 @@ function ocultar() {
   document.getElementById("abrir").style.display = "inline";
   document.getElementById("cerrar").style.display = "none";
 }
+
