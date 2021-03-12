@@ -12,6 +12,12 @@ body {
   background-color: #ffffff;
   font-family: "Lato", open-sans;
 }
+@media (min-width:768px){
+  body{
+    padding: 0 15% 0 15%; 
+  }
+  
+}
 
 /* --------------------------------------menu lat */
 input#abrir-cerrar {
@@ -100,6 +106,7 @@ ul li {
 /* ---------------------------------cabecera */
 .cabecera {
   display: flex;
+  top: 0;
   background-color: #ffffff;
   height: 58px;
   justify-content: space-around;
@@ -110,7 +117,7 @@ ul li {
 }
 
 .LOGO_V1_Class {
-  padding-top: 30px;
+  padding-top: 20px;
   width: 180px;
   height: 120px;
   top: 0px;
@@ -152,12 +159,14 @@ ul li {
 }
 .account-circle {
   overflow: visible;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   left: 336px;
   top: 17px;
   transform: matrix(1, 0, 0, 1, 0, 0);
+  cursor: pointer;
 }
+
 /* ---------------------------menu lateral */
 .sidebar {
   position: fixed;
@@ -174,19 +183,16 @@ ul li {
 }
 
 @media (min-width: 768px) {
-  .cabecera{
-    
+  .cabecera {
     position: fixed;
     height: 50px;
     width: 100%;
     top: 0;
     z-index: 99;
-    
-}
+  }
 }
 
-#menu{
-
+#menu {
 }
 
 .sidebar .boton-cerrar {
@@ -241,7 +247,6 @@ h1 {
   transition: margin-left 0.4s;
   padding: 1rem;
   z-index: 999;
-  
 }
 
 .abrir-cerrar {
@@ -262,7 +267,7 @@ h1 {
 /* ---------------------------contenido */
 
 .titulo {
-  padding-top: 60px;
+  padding-top: 100px;
   text-align: center;
   font-family: Lato;
   font-style: bold;
@@ -306,7 +311,16 @@ span {
   max-width: 100%;
   max-height: 100%;
 }
+/* @media (min-width: 768px) {
+  .drivers_main {
+    padding-left: 200px;
+    
+    width: 50%;
+    height: auto;
+  }
 
+
+} */
 @media (min-width: 1024px) {
   .container_article {
     display: flex;
@@ -318,7 +332,7 @@ span {
   }
   article {
     padding-top: 30px;
-    padding-left: 100px;
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -334,9 +348,9 @@ span {
     font-size: 18px;
   }
   .drivers_main {
-    padding-left: 200px;
-    flex-grow: 1;
-    width: 497px;
+    width: 50%;
+    padding-top:150px;
+    padding-bottom: 150px;
     height: auto;
   }
   /* .titulo, .carga, .aparca{
@@ -355,22 +369,34 @@ span {
   .slogan {
     font-size: 30px;
   }
+  .drivers_main {
+    width: 50%;
+    height: auto;
+    
+  }
 }
+
 /* -----------------------------ctu modalidad */
-.ctu, .ctu_2 {
+
+
+
+.modalidad_1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  
+  
+}
+.ctu,
+.ctu_2 {
   padding-top: 60px;
   font-size: 14px;
   text-align: center;
 }
 
 
-
-.modalidad_1 {
-padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  justify-content: space-around;
-}
 @media (min-width: 768px) {
   .ctu,
   .ctu_2 {
@@ -378,9 +404,20 @@ padding-top: 60px;
     padding-bottom: 150px;
     font-size: 26px;
   }
-  .modalidad_1 {
-    padding: 150px 336px 50px 336px;
+  /* .modalidad_1 {
+    padding: 150px 336px 500px 336px;
+  } */
+}
+@media (min-width: 1400px) {
+  .ctu,
+  .ctu_2 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-size: 36px;
   }
+  /* .modalidad_1 {
+    padding: 150px 336px 500px 336px;
+  } */
 }
 
 .boton_ctu-1 {
@@ -421,21 +458,28 @@ padding-top: 60px;
   cursor: pointer;
 }
 
-/* -------------------------------app */
-
+.modalidad_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .mobility {
   padding-top: 60px;
   width: 100%;
   max-height: 100%;
 }
 
-@media (min-width: 768) {
+@media (min-width: 768px) {
   .mobility {
     padding-top: 60px;
     width: 100%;
-    max-height: 100%;
+    height: auto;
   }
 }
+
+/* -------------------------------app */
+
 .controla_app {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -468,30 +512,60 @@ padding-top: 60px;
 }
 #saber_mas {
   justify-content: center;
+  align-items: center;
   background-color: rgb(179, 175, 175);
+  height: 36px;
+  font-size: 12px;
+  line-height: 17px;
 }
 
-@media (min-width:768px){
+@media (min-width: 1024px) {
   .controla_app span {
     font-size: 18px;
+  }
+  .apps {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  #appstore {
+    width: 250px;
+    height: 126px;
+  }
+  #playstore {
+    width: 250px;
+    height: 126px;
+  }
 }
-.apps {
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
+@media (min-width:1024px){
+  
+  .drivers_route {
+    width: 40%;
+    order: 2;
+    flex-grow: 0;
+    height: auto;
+    padding-top: 60px;
+  }
+  .app_container{
+    display: flex;
+    justify-content: center;
+    padding-top:100px;
+
+  }
+
+  .apps{
+    padding-top:100px;
+  }
+  .app_contenido{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
-#appstore {
-  width: 300px;
-  height: 126px;
-}
-#playstore {
-  width: 300px;
-  height: 126px;
-}
-}
+
+
 
 /* ---------------------------------easy pay */
-
 
 .drivers_route {
   width: 100%;
@@ -530,9 +604,53 @@ padding-top: 60px;
   padding-top: 60px;
 }
 
-@media (min-width:768px){
+
+
+@media (min-width:1024px){
   .easy_pay{
     font-size: 18px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .drivers_route {
+    width: 40%;
+    order: 2;
+    flex-grow: 0;
+    height: auto;
+    padding-top: 60px;
+  }
+  .app_container{
+    display: flex;
+    justify-content: center;
+    padding-top:100px;
+
+  }
+
+  .apps{
+    padding-top:100px;
+  }
+  .app_contenido{
+    display: flex;
+    flex-direction: column;
+  }
+  .easy_texto{
+    width: 50%;
+    flex-basis: auto; 
+    order:2;
+  }
+  
+  .easy_img{
+    display: flex;
+    width: 50%;
+    order:1;
+    height: auto;
+    flex-basis: auto; 
+    padding-right: 10%;
   }
 }
 
@@ -553,6 +671,34 @@ padding-top: 60px;
   padding-top: 60px;
   text-align: center;
 }
+/* --------------------------modalidades con foto */
+.conductor_mod,
+.negocio_truck {
+  width: 100%;
+  height: 317px;
+}
+@media (min-width: 768px) {
+  .conductor_mod,
+  .negocio_truck {
+    width: 60%;
+    height: 317px;
+  }
+}
+@media (min-width: 1024px) {
+  .conductor_mod,
+  .negocio_truck {
+    width: 60%;
+    height: 420px;
+  }
+}
+@media (min-width: 1300px) {
+  .conductor_mod,
+  .negocio_truck {
+    width: 50%;
+    height: 520px;
+  }
+}
+
 /* ----------------hogar */
 .listas {
   display: flex;
