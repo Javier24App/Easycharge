@@ -28,11 +28,22 @@
 
         <a href="index.html" target="_blank" rel="noopener noreferrer"><img data-name="LOGO V.1" class="LOGO_V1_Class"
                 src="img/LOGO V.1.png"></a>
-        <svg data-type="Path" data-name="account-circle" class="account-circle" viewBox="2 2 24 24">
+
+                <div id="menu_container" class="menu_container">
+                    
+                    <ul class="menu_superior">
+                        <li><a class="boton_menu_superior" href="index.html"><p>HOME</p></a></li>
+                        <li><a class="boton_menu_superior" href="conductores.html"><p>CONDUCTOR</p></a></li>
+                        <li><a class="boton_menu_superior" href="negocio.html"><P>NEGOCIO</P></a></li>
+                        <li><a class="boton_menu_superior" href="#"><P>REGISTRARSE</P></a></li>
+                        <li><a class="boton_menu_superior" href="log.html"><P>LOGIN</P></a></li>
+                    </ul>
+                </div>           
+        <a href="log.html" class="cuenta"><svg data-type="Path" data-name="account-circle" class="account-circle" viewBox="2 2 24 24">
             <path class="account-circle_Class"
                 d="M 14.00000095367432 22.64000129699707 C 11.00000095367432 22.64000129699707 8.348000526428223 21.10400199890137 6.800000190734863 18.80000114440918 C 6.836000442504883 16.40000152587891 11.60000038146973 15.08000087738037 14.00000095367432 15.08000087738037 C 16.40000152587891 15.08000087738037 21.16399955749512 16.40000152587891 21.20000076293945 18.80000114440918 C 19.65200042724609 21.10400199890137 17.00000190734863 22.64000129699707 14.00000095367432 22.64000129699707 M 14.00000095367432 5.599999904632568 C 15.98822593688965 5.599999904632568 17.60000038146973 7.211775302886963 17.60000038146973 9.200000762939453 C 17.60000038146973 11.1882266998291 15.98822593688965 12.80000114440918 14.00000095367432 12.80000114440918 C 12.01177501678467 12.80000114440918 10.40000057220459 11.1882266998291 10.40000057220459 9.200000762939453 C 10.40000057220459 7.211774826049805 12.0117769241333 5.59999942779541 14.00000190734863 5.599999904632568 M 14.00000095367432 2 C 7.372582912445068 2 1.999998927116394 7.372584819793701 2 14.00000286102295 C 2 20.62741661071777 7.37258243560791 26.00000190734863 13.99999904632568 26.00000190734863 C 20.62742042541504 26.00000190734863 26.00000190734863 20.62741661071777 26.00000190734863 13.99999713897705 C 26.00000190734863 7.363999843597412 20.60000038146973 2 14.00000095367432 2 Z">
             </path>
-        </svg>
+        </svg></a>
 
     </div>
 
@@ -45,7 +56,7 @@
                 <li><a href="conductores.html">CONDUCTOR</a></li>
                 <li><a href="negocio.html">NEGOCIO</a></li>
                 <li><a href="#">REGISTRARSE</a></li>
-                <li><a href="#">LOGIN</a></li>
+                <li><a href="log.html">LOGIN</a></li>
             </ul>
         </div>
        
@@ -74,8 +85,8 @@
 
             <div class="modalidad_1">
 
-                <button class="boton_ctu-1"><a href="/conductores.html"></a>CONDUCTOR</button>
-                <button class="boton_ctu-2"><a href="/negocio.html"></a>NEGOCIO</button>
+                <button class="boton_ctu-1"><a href="conductores.html"><p>CONDUCTOR</p></a></button>
+                <button class="boton_ctu-2"><a href="negocio.html"><P>NEGOCIO</P></a></button>
 
 
             </div>
@@ -95,7 +106,7 @@
                     <img id="appstore" src="img/appstore.png" alt="AppStore">
                 </div>
                 <div class="saber_container">
-                    <button class="boton_ctu-1" id="saber_mas"><a href="http://"></a>SABER MÁS</button>
+                    <button class="boton_ctu-1" id="saber_mas"><a href="saber_mas.html"><p>SABER MÁS</p></a></button>
                 </div>
             </div>
             <img src="img/Drivers_Route_Planner_Web.png" alt="ruta conductores" class="drivers_route">
@@ -120,23 +131,81 @@
 
         <div class="modalidad">
 
-            <button class="boton_ctu-1"><a href="conductores.html"></a>CONDUCTOR</button>
+            <button class="boton_ctu-1"><a href="conductores.html"><p>CONDUCTOR</p></a></button>
             <img src="img/img5-smart3-desktop.png" alt="Imagen conductor" class="conductor_mod">
             <div class="separador"></div>
-            <button class="boton_ctu-2"><a href="negocio.html"></a>NEGOCIO</button>
+            <button class="boton_ctu-2"><a href="negocio.html"><P>NEGOCIO</P></a></button>
             <img src="img/daimler-ecascadia.jpg" alt="Imagen camión" class="negocio_truck">
 
 
         </div>
-
+    </main>
+        <!-- /* ---------------------------------FOOTER */ -->
         <footer>
             <div class="redes">
+                <p>Siguenos:</p>
+                <a href="#" target="_blank" class="fa fa-facebook"><svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="24.007" height="24" viewBox="0 0 24.007 24">
+                    <path id="facebook-2" data-name="facebook" d="M14,2.04a12.079,12.079,0,0,0-1.872,24V17.606H9.08V14.112h3.048V11.45c0-3.024,1.788-4.687,4.536-4.687a18.738,18.738,0,0,1,2.676.229V9.968H17.828a1.739,1.739,0,0,0-1.956,1.88v2.265h3.336l-.54,3.494h-2.8V26.04A12.079,12.079,0,0,0,14,2.04Z" transform="translate(-1.994 -2.04)" fill="#373737"/>
+                  </svg>
+                  </a>
 
+                <a href="#" target="_blank"><svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="instagram-2" data-name="instagram" d="M8.96,2H19.04A6.965,6.965,0,0,1,26,8.96V19.04A6.96,6.96,0,0,1,19.04,26H8.96A6.965,6.965,0,0,1,2,19.04V8.96A6.96,6.96,0,0,1,8.96,2M8.72,4.4A4.32,4.32,0,0,0,4.4,8.72V19.28A4.317,4.317,0,0,0,8.72,23.6H19.28a4.32,4.32,0,0,0,4.32-4.32V8.72A4.317,4.317,0,0,0,19.28,4.4H8.72M20.3,6.2a1.5,1.5,0,1,1-1.5,1.5,1.5,1.5,0,0,1,1.5-1.5M14,8a6,6,0,1,1-6,6,6,6,0,0,1,6-6m0,2.4A3.6,3.6,0,1,0,17.6,14,3.6,3.6,0,0,0,14,10.4Z" transform="translate(-2 -2)" fill="#373737"/>
+                  </svg>
+                  </a>
+                
+                <a href="#" target="_blank" class="fa fa-linkeding"><svg id="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="linkedin-2" data-name="linkedin" d="M21.829,0H2.171A2.171,2.171,0,0,0,0,2.171V21.829A2.171,2.171,0,0,0,2.171,24H21.829A2.171,2.171,0,0,0,24,21.829V2.171A2.171,2.171,0,0,0,21.829,0ZM7.427,20.723a.632.632,0,0,1-.632.632H4.105a.632.632,0,0,1-.632-.632V9.449a.632.632,0,0,1,.632-.632H6.795a.632.632,0,0,1,.632.632ZM5.45,7.755A2.555,2.555,0,1,1,8.005,5.2,2.555,2.555,0,0,1,5.45,7.755ZM21.481,20.774a.581.581,0,0,1-.581.581H18.014a.581.581,0,0,1-.581-.581V15.486c0-.789.231-3.457-2.062-3.457-1.779,0-2.139,1.826-2.212,2.646v6.1a.581.581,0,0,1-.581.581H9.788a.581.581,0,0,1-.581-.581V9.4a.581.581,0,0,1,.581-.581h2.791a.581.581,0,0,1,.581.581v.984a3.962,3.962,0,0,1,3.726-1.754c4.621,0,4.595,4.317,4.595,6.689v5.456Z" fill="#373737"/>
+                  </svg>
+                  </a></a>
+                
+              <!--   <a href="http://" target="_blank" rel="noopener noreferrer">facebook</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">instagram</a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">linkeding</a> -->
             </div>
             <div class="info">
-
-            </div>
+                <div class="footer-links-1">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Saber más</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">FaQ</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">24/7 Att</a>
+                </div>
+                <div class="footer-links-2">
+                    <a href="http://" rel="noopener noreferrer">Conductor</a>
+                    <a href="http://" rel="noopener noreferrer">Negocio</a>
+                </div>
+                <div class="footer-links-3">
+                    <p>Subscribete a nuestro newsletter:</p>
+                    <input type="email" name="Introduce tu e-mail" id="e-mail">
+                    <button type="submit">SUBSCRIBIRSE</button>
+    
+                </div>
+    
+                <div class="footer_apps">
+    <div class="footer_apps_element_1">
+                    <p class="instala">Instala nuestra App:</p>
+                </div>
+                <div class="footer_apps_element_2">
+                    
+                    <img id="playstore-footer" src="img/playstoreok.png" alt="PlayStore">
+                    <img id="appstore-footer" src="img/appstore.png" alt="AppStore">
+                </div>
+                    
+                </div>
+              
+    
         </footer>
+        <div class="map">
+            <div class="copy">
+                <img src="icons/-copyright_90662.svg" alt="C">
+                <p> 2021 J.S.</p>
+            </div>
+            <li>Mapa web  |</li> 
+            <li> Información local y política cookies  |</li> 
+            <li> Política privacidad  |</li> 
+            <li> About</li>
+        </div>
+    
+    
 
 
 
@@ -146,7 +215,7 @@
 
 
         <script src="init.js"></script>
-    </main>
+   
 </body>
 
 </html>
