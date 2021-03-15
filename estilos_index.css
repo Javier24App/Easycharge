@@ -13,7 +13,7 @@ body {
   font-family: "Lato", open-sans;
 }
 @media (min-width:768px){
-  body{
+  main {
     padding: 0 15% 0 15%; 
   }
   
@@ -166,6 +166,9 @@ ul li {
   transform: matrix(1, 0, 0, 1, 0, 0);
   cursor: pointer;
 }
+.burguer{
+  top: 17px;
+}
 
 /* ---------------------------menu lateral */
 .sidebar {
@@ -262,7 +265,7 @@ h1 {
 
 #menu {
   position: absolute;
-  top: 20px;
+  top: 15px;
 }
 /* ---------------------------contenido */
 

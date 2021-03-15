@@ -12,14 +12,12 @@
     background-color: #ffffff;
     font-family: "Lato", open-sans;
   }
-
   @media (min-width:768px){
     main {
       padding: 0 15% 0 15%; 
     }
     
   }
-  
   /* --------------------------------------menu lat */
   input#abrir-cerrar {
     visibility: hidden;
@@ -107,7 +105,7 @@
   /* ---------------------------------cabecera */
   .cabecera {
     display: flex;
-    top: 0;
+    top:0;
     background-color: #ffffff;
     height: 58px;
     justify-content: space-around;
@@ -118,7 +116,7 @@
   }
   
   .LOGO_V1_Class {
-    padding-top: 20px;
+    padding-top: 10px;
     width: 180px;
     height: 120px;
     top: 0px;
@@ -128,6 +126,17 @@
       width: 300px;
       height: 200px;
     }
+  }
+  @media (min-width: 768px) {
+    .cabecera{
+      
+      position: fixed;
+      height: 50px;
+      width: 100%;
+      top: 0;
+      z-index: 99;
+      
+  }
   }
   .menu_Class {
     fill: rgba(0, 0, 0, 1);
@@ -183,17 +192,10 @@
     box-sizing: border-box;
   }
   
-  @media (min-width: 768px) {
-    .cabecera {
-      position: fixed;
-      height: 50px;
-      width: 100%;
-      top: 0;
-      z-index: 99;
-    }
-  }
   
-  #menu {
+  
+  #menu{
+  
   }
   
   .sidebar .boton-cerrar {
@@ -237,17 +239,15 @@
     background-color: rgb(218, 218, 218);
   }
   
-  h1 {
-    color: #f90;
-    font-size: 180%;
-    font-weight: normal;
-  }
+  
+  
   #contenido {
     position: fixed;
     top: -5px;
     transition: margin-left 0.4s;
     padding: 1rem;
     z-index: 999;
+    
   }
   
   .abrir-cerrar {
@@ -271,7 +271,6 @@
     padding-top: 100px;
     text-align: center;
     font-family: Lato;
-    font-style: bold;
     font-size: 30px;
     color: rgba(0, 0, 0, 1);
   }
@@ -307,23 +306,25 @@
     font-size: 16px;
   }
   
-  .drivers_main {
-    padding-top: 60px;
-    max-width: 100%;
-    max-height: 100%;
+  .start {
+    padding-top: 100px;
+    width: 100%;
+    height: auto;
   }
   
   @media (min-width: 1024px) {
     .container_article {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-around;
+      justify-content: center;
+      align-items: center;
     }
     .titulo {
       font-size: 46px;
     }
     article {
-      padding-top: 30px;
+      padding-top: 100px;
       padding-left: 100px;
       display: flex;
       flex-direction: column;
@@ -335,19 +336,21 @@
       color: rgba(0, 0, 0, 1);
       justify-content: center;
       flex-grow: 1;
+      justify-content: center;
+      align-items: center;
     }
     span {
       font-size: 18px;
     }
-    .drivers_main {
-      padding-left: 200px;
-      flex-grow: 1;
-      width: 497px;
+    .start {
+      padding-top: 100px;
+      width: 60%;
       height: auto;
     }
+    
     /* .titulo, .carga, .aparca{
-      flex-basis: 2;
-      flex-grow: 2; */
+    flex-basis: 2;
+    flex-grow: 2; */
   }
   
   @media (min-width: 1400px) {
@@ -361,17 +364,31 @@
     .slogan {
       font-size: 30px;
     }
+    .start {
+      padding-top: 100px;
+      width: 60%;
+      min-height: auto;
+    }
   }
+  @media (min-width: 1600px) {
+    .start {
+      padding-top: 100px;
+      
+      
+    }
+  }
+  
   /* -----------------------------ctu modalidad */
-  .ctu,
-  .ctu_2 {
+  .ctu, .ctu_2 {
     padding-top: 60px;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
   }
   
+  
+  
   .modalidad_1 {
-    padding-top: 60px;
+  padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
     justify-content: space-around;
@@ -379,17 +396,17 @@
   @media (min-width: 768px) {
     .ctu,
     .ctu_2 {
-      padding-top: 100px;
-      padding-bottom: 60px;
+      padding-top: 150px;
+      padding-bottom: 150px;
       font-size: 26px;
     }
     .modalidad_1 {
-      padding: 60px 336px 100px 336px;
+      padding: 150px 200px 50px 200px;
     }
   }
   
   .boton_ctu-1 {
-    background-color: #ffb746;
+    background-color:#46CCFF;
     cursor: pointer;
     width: 125px;
     height: 46px;
@@ -403,7 +420,7 @@
     border: none;
   }
   .boton_ctu-2 {
-    background-color: #46c6ff;
+    background-color: #92DDEC;
     cursor: pointer;
     width: 125px;
     height: 46px;
@@ -415,6 +432,7 @@
     font-size: 14px;
     border-radius: 6px;
     border: none;
+    line-height: 22.5px;
   }
   
   .boton_ctu-1 a,
@@ -426,6 +444,19 @@
     cursor: pointer;
   }
   
+  /* ------------------------------wireless */
+  @media (min-width:768px){
+  .wireless_container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+  }
+  
+  .wireless{
+    width: 50%;
+  }
+  }
+  
   /* -------------------------------app */
   
   .mobility {
@@ -434,7 +465,7 @@
     max-height: 100%;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 768) {
     .mobility {
       padding-top: 60px;
       width: 100%;
@@ -473,33 +504,30 @@
   }
   #saber_mas {
     justify-content: center;
-    align-items: center;
     background-color: rgb(179, 175, 175);
-    height: 36px;
-    font-size: 12px;
-    line-height: 17px;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width:768px){
     .controla_app span {
       font-size: 18px;
-    }
-    .apps {
-      display: flex;
-      justify-content: center;
-      padding-top: 30px;
-    }
-    #appstore {
-      width: 300px;
-      height: 126px;
-    }
-    #playstore {
-      width: 300px;
-      height: 126px;
-    }
+  }
+  .apps {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  #appstore {
+    width: 300px;
+    height: 126px;
+  }
+  #playstore {
+    width: 300px;
+    height: 126px;
+  }
   }
   
   /* ---------------------------------easy pay */
+  
   
   .drivers_route {
     width: 100%;
@@ -543,6 +571,9 @@
       font-size: 18px;
       padding-top: 100px;
     }
+    .easy_pay h2{
+        font-size: 36px;
+    }
     .drivers_route {
       width: 40%;
       order: 2;
@@ -564,6 +595,7 @@
       font-size: 24px;
     }
   }
+  
   .modalidad {
     display: flex;
     justify-content: center;
@@ -605,140 +637,42 @@
     color: white;
   }
   
-  /* -----------------------------------------------------hogar */
   
-  .garage {
-    width: 100%;
-    height: auto;
+  /* --------------------------------conductores */
+  .start {
     padding-top: 60px;
+    max-width: 100%;
+    max-height: 100%;
   }
-  .listas h4 {
-    text-align: center;
+  .ctu{
+    padding-bottom: 60px;
   }
   
-  .listas {
-    padding-left: 30px;
+  .modalidad_1{
+    padding-top: 20px;
+  }
+  .wireless {
     padding-top: 60px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  #tecnologia{
     display: flex;
-    flex-direction: colunm;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+   
+    align-items:center;
+    padding-top: 60px;
+    
   }
-  .listas li {
-    font-size: 12px;
-  }
-  
-  #garantia {
-    font-size: 12px;
-  }
-  #precio {
-    font-size: 20px;
-  }
-  .car_garage {
+  #pay_charge{
     width: 100%;
-    height: auto;
-    height: auto;
-  }
-  @media (min-width: 768px) {
-    .ctu,
-    .ctu_2 {
-      padding-top: 100px;
-      font-size: 26px;
-    }
-  }
   
-  @media (min-width: 1024px) {
-    .container_article {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      justify-content: center;
-      align-items: center;
-    }
-    .titulo {
-      font-size: 46px;
-    }
-  
-    .garage {
-      padding-top: 100px;
-      width: 60%;
-      height: auto;
-    }
-    #claro {
-      padding-bottom: 0;
-      padding-top: 0;
-    }
-  
-    .caracteristicas_plan {
-      display: flex;
-      justify-content: space-around;
-    }
-    .caracteristicas_plan_info {
-      display: flex;
-      flex-direction: column;
-    }
-    .car_garage {
-      width: 50%;
-    }
-    .listas h4 {
-      text-align: center;
-    }
-  
-    .listas {
-      padding-left: 30px;
-      padding-top: 100px;
-      display: flex;
-      flex-direction: colunm;
-      justify-content: center;
-      align-items: center;
-    }
-    .listas li {
-      font-size: 18px;
-    }
-  
-    #garantia {
-      font-size: 18px;
-      padding-top: 50px;
-    }
-    #precio {
-      font-size: 36px;
-    }
-    h4 {
-      font-size: 18px;
-    }
-    #contrata {
-      width: 1000px;
-    }
   }
-  
-  @media (min-width:1300px){
-      .car_garage {
-          width: 40%;
-        }
-        .listas h4 {
-          text-align: center;
-        }
-      
-        .listas {
-          padding-left: 30px;
-          padding-top: 100px;
-          display: flex;
-          flex-direction: colunm;
-          justify-content: center;
-          align-items: center;
-        }
-        .listas li {
-          font-size: 24px;
-        }
+  #casa_1, #casa_2{
+    font-size: 13px;
+    padding:0;
+    width: 170px;
   }
-
-  .start{
-      max-width: 100%;
-  }
-
-  .aparca{
-      padding-bottom: 60px;
-  }
-
   
   

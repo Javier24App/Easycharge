@@ -12,6 +12,12 @@ body {
   background-color: #ffffff;
   font-family: "Lato", open-sans;
 }
+@media (min-width:768px){
+    main {
+      padding: 0 15% 0 15%; 
+    }
+    
+  }
 
 /* --------------------------------------menu lat */
 input#abrir-cerrar {
