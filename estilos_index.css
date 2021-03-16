@@ -12,7 +12,13 @@ body {
   background-color: #ffffff;
   font-family: "Lato", open-sans;
 }
-@media (min-width:768px){
+@media (min-width:1024px){
+  main {
+    padding: 0 2% 0 2%; 
+  }
+  
+}
+@media (min-width:1500px){
   main {
     padding: 0 15% 0 15%; 
   }
@@ -414,16 +420,37 @@ span {
   max-width: 100%;
   max-height: 100%;
 }
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.easy_charge_logo{
+  width: 70%;
+  height: auto;
+  
+}
+
+.logo_2{
+  display: none;
+  
+}
+.easy_charge_logo_2{
+  width: 70%;
+  height: auto;
+  
+}
 /* @media (min-width: 768px) {
   .drivers_main {
-    padding-left: 200px;
+    padding-left: 30px;
     
-    width: 50%;
+    width: 60%;
     height: auto;
-  }
+  } 
 
 
-} */
+}
+*/
 @media (min-width: 1024px) {
   .container_article {
     display: flex;
@@ -456,6 +483,15 @@ span {
     padding-bottom: 150px;
     height: auto;
   }
+  .logo{
+    display: none;
+  }
+  
+  .logo_2{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  }
   /* .titulo, .carga, .aparca{
   flex-basis: 2;
   flex-grow: 2; */
@@ -477,6 +513,7 @@ span {
     height: auto;
     
   }
+ 
 }
 
 /* -----------------------------ctu modalidad */
@@ -741,7 +778,7 @@ span {
     
   }
   .drivers_route {
-    width: 80%;
+    width: 50%;
     height: auto;
     order: 2;
     flex-grow: 0;
@@ -770,7 +807,7 @@ span {
   
   .easy_img{
     display: flex;
-    width: 80%;
+    width: 55%;
     order:1;
     height: auto;
    
@@ -811,14 +848,14 @@ span {
 @media (min-width: 1024px) {
   .conductor_mod,
   .negocio_truck {
-    width: 60%;
+    width: 70%;
     height: 420px;
   }
 }
 @media (min-width: 1300px) {
   .conductor_mod,
   .negocio_truck {
-    width: 50%;
+    width: 80%;
     height: 520px;
   }
 }
@@ -919,6 +956,11 @@ span {
     color: rgb(0, 0, 0);
     align-items: center;
 }
+.footer-links-1,.footer-links-2{
+  
+  font-size: 16px;
+  margin-left: 15px;
+}
 .footer-links-3 input{
   margin-bottom: 10px;
   color: #000000;
@@ -980,5 +1022,9 @@ span {
   }
   .map li{
     padding-left:5px;
+  }
+  .instala{
+    font-size: 16px;
+  
   }
 }

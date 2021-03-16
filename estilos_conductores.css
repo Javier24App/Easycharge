@@ -407,6 +407,16 @@ span {
   width: 100%;
   height: auto;
 }
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.easy_charge_logo{
+  width: 70%;
+  height: auto;
+  
+}
 
 @media (min-width: 1024px) {
   .container_article {
@@ -562,12 +572,17 @@ padding-top: 60px;
 }
 
 
+
 /* ------------------------------wireless */
 @media (min-width:768px){
 .wireless_container{
   display: flex;
   justify-content: space-around;
   padding-top: 100px;
+}
+.boton_ctu-1 P,
+.boton_ctu-2 P {
+  font-size: 12px;
 }
 
 .wireless{
@@ -775,6 +790,7 @@ padding-top: 60px;
 
 .modalidad_1{
   padding-top: 20px;
+  padding-bottom: 80px;
 }
 .wireless {
   padding-top: 60px;
@@ -798,6 +814,7 @@ padding-top: 60px;
   font-size: 13px;
   padding:0;
   width: 170px;
+  
 }
 
 /* ---------------------------------FOOTER */
@@ -871,6 +888,11 @@ padding-top: 60px;
     color: rgb(0, 0, 0);
     align-items: center;
 }
+.footer-links-1,.footer-links-2{
+  
+  font-size: 16px;
+  margin-left: 15px;
+}
 .footer-links-3 input{
   margin-bottom: 10px;
   color: #000000;
@@ -932,6 +954,10 @@ padding-top: 60px;
   }
   .map li{
     padding-left:5px;
+  }
+  .instala{
+    font-size: 16px;
+  
   }
 }
 

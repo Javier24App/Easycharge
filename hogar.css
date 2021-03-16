@@ -12,9 +12,9 @@ body {
   background-color: #ffffff;
   font-family: "Lato", open-sans;
 }
-@media (min-width:768px){
+@media (min-width:1024px){
     main {
-      padding: 0 15% 0 15%; 
+      padding: 0 10% 0 10%; 
     }
     
   }
@@ -403,6 +403,16 @@ span {
 .slogan {
   font-size: 16px;
 }
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.easy_charge_logo{
+  width: 70%;
+  height: auto;
+  
+}
 
 .drivers_main {
   padding-top: 60px;
@@ -469,21 +479,11 @@ span {
 
 .modalidad_1 {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 150px;
   display: flex;
   justify-content: space-around;
 }
-@media (min-width: 768px) {
-  .ctu,
-  .ctu_2 {
-    padding-top: 100px;
-    padding-bottom: 60px;
-    font-size: 26px;
-  }
-  .modalidad_1 {
-    padding: 60px 336px 100px 336px;
-  }
-}
+
 
 .boton_ctu-1 {
   background-color: #ffb746;
@@ -498,29 +498,48 @@ span {
   font-size: 14px;
   border-radius: 6px;
   border: none;
-}
-.boton_ctu-2 {
-  background-color: #46c6ff;
-  cursor: pointer;
-  width: 125px;
-  height: 46px;
-  border-radius: 5%;
-  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.38));
-  text-decoration: none;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 14px;
-  border-radius: 6px;
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.boton_ctu-1 a,
-.boton_ctu-2 a {
+
+.boton_ctu-1 a
+{
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 12px;
   cursor: pointer;
+  text-decoration:none;
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.boton_ctu-1 a p{
+  font-size: 10px;
+  width: 125px;
+  height: 46px;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+  #casa_1{
+    width: 125px;
+  height: 46px; 
+  }
+
+@media (min-width: 768px) {
+  .ctu {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    font-size: 26px;
+  } 
+  
+    
 }
 
 /* -------------------------------app */
@@ -683,7 +702,11 @@ span {
 }
 
 /* -----------------------------------------------------hogar */
-
+.caracteristicas_plan{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .garage {
   width: 100%;
   height: auto;
@@ -711,10 +734,13 @@ span {
 #precio {
   font-size: 20px;
 }
+
 .car_garage {
-  width: 100%;
-  height: auto;
-  height: auto;
+  width: 80%;
+  border-radius: 5%;
+  margin: 0 auto;
+  
+  
 }
 @media (min-width: 768px) {
   .ctu,
@@ -722,6 +748,13 @@ span {
     padding-top: 100px;
     font-size: 26px;
   }
+  #contrata{
+    width: 200px;
+  }
+  .listas li {
+    font-size: 14px;
+  }
+  
 }
 
 @media (min-width: 1024px) {
@@ -738,12 +771,12 @@ span {
 
   .garage {
     padding-top: 100px;
-    width: 60%;
+    width: 80%;
     height: auto;
   }
   #claro {
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-bottom: 60px;
+    padding-top: 100px;
   }
 
   .caracteristicas_plan {
@@ -756,6 +789,7 @@ span {
   }
   .car_garage {
     width: 50%;
+    height: 500px;
   }
   .listas h4 {
     text-align: center;
@@ -784,7 +818,12 @@ span {
     font-size: 18px;
   }
   #contrata {
-    width: 1000px;
+    width: 400px;
+  }
+  .caracteristicas_plan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -805,7 +844,7 @@ span {
         align-items: center;
       }
       .listas li {
-        font-size: 24px;
+        font-size: 18px;
       }
 }
 .saber_container{
@@ -883,6 +922,11 @@ span {
     color: rgb(0, 0, 0);
     align-items: center;
 }
+.footer-links-1,.footer-links-2{
+  
+  font-size: 16px;
+  margin-left: 15px;
+}
 .footer-links-3 input{
   margin-bottom: 10px;
   color: #000000;
@@ -945,4 +989,10 @@ span {
   .map li{
     padding-left:5px;
   }
+  .instala{
+    font-size: 16px;
+  
+  }
 }
+
+
