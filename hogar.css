@@ -413,6 +413,11 @@ span {
   height: auto;
   
 }
+.easy_charge_logo:hover, .easy_charge_logo_2:hover{
+  transform: scale(1.4 );
+  transform-style: ease-in-out;
+  
+}
 
 .drivers_main {
   padding-top: 60px;
@@ -530,6 +535,23 @@ span {
   #casa_1{
     width: 125px;
   height: 46px; 
+  }
+
+  .boton_ctu-1:hover{
+    background-color: #000;
+    color: white;
+  }
+  
+  .boton_ctu-1 a:hover{
+    color:#fff
+  }
+  .boton_ctu-2:hover{
+    background-color: #000;
+    
+  }
+  
+  .boton_ctu-2 a:hover{
+    color:#fff
   }
 
 @media (min-width: 768px) {

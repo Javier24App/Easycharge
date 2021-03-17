@@ -654,7 +654,7 @@ h1 {
     display: flex;
     justify-content: space-around;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .ctu,
     .ctu_2 {
       padding-top: 150px;
@@ -694,6 +694,7 @@ h1 {
     border-radius: 6px;
     border: none;
     line-height: 22.5px;
+    margin-left: 30px;
   }
   
   .boton_ctu-1 a,
@@ -829,14 +830,15 @@ h1 {
   
   @media (min-width:768px){
     .easy_pay{
-      font-size: 18px;
+      font-size: 14px;
       padding-top: 100px;
     }
+    
     .easy_pay h2{
         font-size: 36px;
     }
     .drivers_route {
-      width: 40%;
+      width: 50%;
       order: 2;
       height: auto;
       padding-top: 60px;
@@ -853,7 +855,7 @@ h1 {
   }
   @media (min-width:1300px){
     .easy_pay{
-      font-size: 24px;
+      font-size: 14px;
     }
   }
   

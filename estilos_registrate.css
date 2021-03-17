@@ -226,7 +226,7 @@ a:hover {
   bottom: 0;
   margin: auto;
   width: 260px;
-  height: 150px;
+  height: 260px;
   border-radius: 10px;
   background: rgba(255, 251, 251, 0.25);
   box-shadow: 1px 1px 10px #000;
@@ -239,3 +239,14 @@ a:hover {
   font-size: 10px;
   color: black;
 } */
+#boton_reg{
+    text-align: center;
+    color: black;
+    background-color: #f90;
+}
+#forgotten-container form a{
+    text-align: center;
+    color: white;
+    background-color: #f90;
+}
+

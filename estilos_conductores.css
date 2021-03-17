@@ -417,6 +417,16 @@ span {
   height: auto;
   
 }
+.easy_charge_logo:hover, .easy_charge_logo_2:hover{
+  transform: scale(1.4 );
+  transform-style: ease-in-out;
+  
+}
+
+.start:hover{
+  transform: scale(1.1);
+}
+
 
 @media (min-width: 1024px) {
   .container_article {
@@ -450,9 +460,12 @@ span {
   }
   .start {
     padding-top: 100px;
-    width: 60%;
+    width: 80%;
     height: auto;
+    
   }
+
+  
   
   /* .titulo, .carga, .aparca{
   flex-basis: 2;
@@ -570,7 +583,23 @@ padding-top: 60px;
 .boton_ctu-2 P {
   font-size: 10px;
 }
+.boton_ctu-1:hover{
+  background-color: #000;
+  
+  
+}
 
+.boton_ctu-1 a:hover{
+  color:#fff
+}
+.boton_ctu-2:hover{
+  background-color: #000;
+  
+}
+
+.boton_ctu-2 a:hover{
+  color:#fff
+}
 
 
 /* ------------------------------wireless */
@@ -728,11 +757,14 @@ padding-top: 60px;
   .apps{
     padding-top:100px;
   }
+  #easy_pay_1 p{
+    font-size: 16px;
+  }
 
 }
 @media (min-width:1300px){
   .easy_pay{
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
