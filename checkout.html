@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=main, initial-scale=1.0">
+  <title>EasyCharge contrata</title>
+  <link rel="icon" type="img/vnd.microsoft.icon" href="img/LOGO V.1.png" sizes="16x16 24x24 36x36 48x48">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos-contrata.css"> 
+  
+  <link rel="stylesheet" href="estilos_checkout.css">
+  <script src="init.js"></script>
+  <!-- <script src="js/bootstrap.bundle.js.map"></script> -->
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+     <!-- ------------------------------------------Cabecera -->
+     <div class="cabecera">
+      <div id="burguer">
+
+          <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><img id="menu"
+                  src="icons/menu.svg" alt="Menú"></a><a id="cerrar" class="abrir-cerrar" href="#"
+              onclick="ocultar()"></a>
+      </div>
+
+      <a href="index.html" target="_blank" rel="noopener noreferrer"><img data-name="LOGO V.1" class="LOGO_V1_Class"
+              src="img/LOGO V.1.png"></a>
+
+      <div id="menu_container" class="menu_container">
+
+          <ul class="menu_superior">
+              <li><a class="boton_menu_superior" href="index.html">
+                      <p>HOME</p>
+                  </a></li>
+              <li><a class="boton_menu_superior" href="conductores.html">
+                      <p>CONDUCTOR</p>
+                  </a></li>
+              <li><a class="boton_menu_superior" href="negocio.html">
+                      <P>NEGOCIO</P>
+                  </a></li>
+              <li><a class="boton_menu_superior" href="Easy_charge_registrate.html">
+                      <P>REGISTRARSE</P>
+                  </a></li>
+              <li><a class="boton_menu_superior" href="log.html">
+                      <P>LOGIN</P>
+                  </a></li>
+          </ul>
+      </div>
+      <a href="log.html" class="cuenta"><svg data-type="Path" data-name="account-circle" class="account-circle"
+              viewBox="2 2 24 24">
+              <path class="account-circle_Class"
+                  d="M 14.00000095367432 22.64000129699707 C 11.00000095367432 22.64000129699707 8.348000526428223 21.10400199890137 6.800000190734863 18.80000114440918 C 6.836000442504883 16.40000152587891 11.60000038146973 15.08000087738037 14.00000095367432 15.08000087738037 C 16.40000152587891 15.08000087738037 21.16399955749512 16.40000152587891 21.20000076293945 18.80000114440918 C 19.65200042724609 21.10400199890137 17.00000190734863 22.64000129699707 14.00000095367432 22.64000129699707 M 14.00000095367432 5.599999904632568 C 15.98822593688965 5.599999904632568 17.60000038146973 7.211775302886963 17.60000038146973 9.200000762939453 C 17.60000038146973 11.1882266998291 15.98822593688965 12.80000114440918 14.00000095367432 12.80000114440918 C 12.01177501678467 12.80000114440918 10.40000057220459 11.1882266998291 10.40000057220459 9.200000762939453 C 10.40000057220459 7.211774826049805 12.0117769241333 5.59999942779541 14.00000190734863 5.599999904632568 M 14.00000095367432 2 C 7.372582912445068 2 1.999998927116394 7.372584819793701 2 14.00000286102295 C 2 20.62741661071777 7.37258243560791 26.00000190734863 13.99999904632568 26.00000190734863 C 20.62742042541504 26.00000190734863 26.00000190734863 20.62741661071777 26.00000190734863 13.99999713897705 C 26.00000190734863 7.363999843597412 20.60000038146973 2 14.00000095367432 2 Z">
+              </path>
+          </svg></a>
+
+  </div>
+
+  <main>
+      <!-- -------------------------------menu lateral -->
+      <div id="sidebar" class="sidebar">
+          <a href="#" class="boton-cerrar" onclick="ocultar()">&times;</a>
+          <ul class="menu">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="conductores.html">CONDUCTOR</a></li>
+              <li><a href="negocio.html">NEGOCIO</a></li>
+              <li><a href="Easy_charge_registrate.html">REGISTRARSE</a></li>
+              <li><a href="log.html">LOGIN</a></li>
+          </ul>
+      </div>
+
+
+
+
+
+<!-- -------------------------------------contenido -->
+<main>
+   
+
+    
+    <div class="container">
+      <div class="col1">
+        <div class="card">
+          <div class="front">
+            <div class="type">
+              <img class="bankid"/>
+            </div>
+            <span class="chip"></span>
+            <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+            <div class="date"><span class="date_value">MM / YYYY</span></div>
+            <span class="fullname">FULL NAME</span>
+          </div>
+          <div class="back">
+            <div class="magnetic"></div>
+            <div class="bar"></div>
+            <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+            <span class="chip"></span><span class="disclaimer">This card is property of Random Bank of Random corporation. <br> If found please return to Random Bank of Random corporation - 21968 Paris, Verdi Street, 34 </span>
+          </div>
+        </div>
+      </div>
+      <div class="col2">
+        <label>Card Number</label>
+        <input class="number" type="text" ng-model="ncard" maxlength="19" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+        <label>Cardholder name</label>
+        <input class="inputname" type="text" placeholder=""/>
+        <label>Expiry date</label>
+        <input class="expire" type="text" placeholder="MM / YYYY"/>
+        <label>Security Number</label>
+        <input class="ccv" type="text" placeholder="CVC" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+        <button class="buy"><a href="info_fuera_final.html" class="material-icons">VALIDAR</a></button>
+      </div>
+    </div>
+   
+    <div class="tips">
+        Payment card number: (4) VISA, (51 -> 55) MasterCard, (36-38-39) DinersClub, (34-37) American Express, (65) Discover, (5019) dankort
+        </div>
+</main>
+
+</body>
+    
+
+
+
