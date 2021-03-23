@@ -36,9 +36,9 @@ img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: rgba(3, 3, 3, 0.8);
+  background: #f90;
   overflow: hidden;
-  opacity: 0.4;
+  opacity: 0.6;
   box-shadow: 10px 10px 30px #000;
 }
 
@@ -121,6 +121,14 @@ input:focus {
   box-shadow: 3px 3px 10px #333;
   background: rgba(3, 3, 3, 0.18);
   color: #000;
+}
+form a{
+  background-color: #f90;
+  text-align: center;
+}
+form a:hover{
+  background-color: black;
+  color: white;
 }
 
 /* Placeholders */

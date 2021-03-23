@@ -235,7 +235,7 @@ ul li {
   .menu_superior li p:hover{
       
       background-color: rgb(255, 255, 255);
-      transform: scale(1.2);
+      transform: scale(1.1);
       color: #f90;
   }  
   
@@ -369,12 +369,34 @@ h1 {
   font-family: Lato;
   font-size: 30px;
   color: rgba(0, 0, 0, 1);
+  animation: moveToBottom 2s ease-in-out;
+  
 }
 .carga,
 .aparca {
   text-align: center;
   font-style: light;
+  animation: moveToBottom2 2s ease-in-out;
+  animation-delay: 1000ms;
 }
+@keyframes moveToBottom {
+  0% {
+    transform: translatey(-1000px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes moveToBottom2 {
+  0% {
+    transform: translatey(-1000px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+
 
 article {
   padding-top: 30px;
@@ -402,11 +424,7 @@ span {
   font-size: 16px;
 }
 
-.start {
-  padding-top: 100px;
-  width: 100%;
-  height: auto;
-}
+
 .logo{
   display: flex;
   align-items: center;
@@ -415,16 +433,53 @@ span {
 .easy_charge_logo{
   width: 70%;
   height: auto;
+  animation: moveToRight 2s ease-in-out ;
+  animation-delay: 1000ms;
+
   
-}
-.easy_charge_logo:hover, .easy_charge_logo_2:hover{
-  transform: scale(1.4 );
-  transform-style: ease-in-out;
   
 }
 
+
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-1000px);
+    
+  }
+  100% {
+    transform: translateX(0px);
+    
+  }
+}
+
+/* .easy_charge_logo:hover, .easy_charge_logo_2:hover{
+  transform: scale(1.1 );
+  transform-style: ease-in-out;
+  
+} */
+.start {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  animation: moveImg 2s ease-out;
+  animation-delay: 1500ms;
+  filter: brightness(1.0) contrast(1.0);
+  box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+}
 .start:hover{
-  transform: scale(1.1);
+  transform: scale(1.01);
+}
+
+@keyframes moveImg{
+  0% {
+    transform: translatey(1000px);
+    opacity:0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity:.1;
+  }
 }
 
 
@@ -459,7 +514,7 @@ span {
     font-size: 18px;
   }
   .start {
-    padding-top: 100px;
+    margin-top: 100px;
     width: 80%;
     height: auto;
     
@@ -484,18 +539,13 @@ span {
     font-size: 30px;
   }
   .start {
-    padding-top: 100px;
+    
     width: 60%;
     min-height: auto;
   }
 }
-@media (min-width: 1600px) {
-  .start {
-    padding-top: 100px;
-    
-    
-  }
-}
+
+
 
 /* -----------------------------ctu modalidad */
 .ctu, .ctu_2 {
@@ -534,8 +584,6 @@ padding-top: 60px;
   text-decoration: none;
   padding: 10px;
   margin-right: 20px;
-  font-weight: 600;
-  font-size: 14px;
   border-radius: 6px;
   border: none;
   display: flex;
@@ -546,7 +594,7 @@ padding-top: 60px;
 .boton_ctu-2 {
   background-color: #46c6ff;
   cursor: pointer;
-  width: 100px;
+  width: 125px;
   height: 46px;
   border-radius: 5%;
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.38));
@@ -568,7 +616,7 @@ padding-top: 60px;
   font-weight: bold;
   width: 125px;
   height: 46px;
-  font-size: 12px;
+  font-size: 24px;
   cursor: pointer;
   text-decoration:none;
   color: black;
@@ -581,7 +629,13 @@ padding-top: 60px;
 
 .boton_ctu-1 P,
 .boton_ctu-2 P {
-  font-size: 10px;
+  font-size: 12px;
+}
+#casa_1, #casa_2{
+  
+  padding:0;
+  width: 120px;
+  
 }
 .boton_ctu-1:hover{
   background-color: #000;
@@ -600,14 +654,34 @@ padding-top: 60px;
 .boton_ctu-2 a:hover{
   color:#fff
 }
+@media (min-width:768px){
+  .boton_ctu-1 P,
+  .boton_ctu-2 P {
+    font-size: 18px;
+  }
+  #casa_1, #casa_2{
+    
+    padding:0;
+    width: 170px;
+    
+  } 
+}
 
 
 /* ------------------------------wireless */
+.wireless{
+  box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+}
+.wireless:hover{
+  transform: scale(1.01);
+  }
+
+
 @media (min-width:768px){
 .wireless_container{
   display: flex;
   justify-content: space-around;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 .boton_ctu-1 P,
 .boton_ctu-2 P {
@@ -653,10 +727,12 @@ padding-top: 60px;
 #appstore {
   width: 150px;
   height: 63px;
+  cursor:pointer;
 }
 #playstore {
   width: 150px;
   height: 63px;
+  cursor:pointer;
 }
 
 .saber_container {
@@ -675,7 +751,7 @@ padding-top: 60px;
 
 @media (min-width:768px){
   .controla_app span {
-    font-size: 18px;
+    font-size: 24px;
 }
 .apps {
   display: flex;
@@ -685,10 +761,12 @@ padding-top: 60px;
 #appstore {
   width: 300px;
   height: 126px;
+  cursor:pointer;
 }
 #playstore {
   width: 300px;
   height: 126px;
+  cursor:pointer;
 }
 #easy_pay_1 {
   padding-left: 40px;
@@ -705,8 +783,13 @@ padding-top: 60px;
 .drivers_route {
   width: 100%;
   height: auto;
-  padding-top: 60px;
+  margin-top: 60px;
+  box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
 }
+
+.drivers_route:hover{
+  transform: scale(1.01);
+  }
 .easy_pay {
   display: flex;
   justify-content: center;
@@ -743,15 +826,18 @@ padding-top: 60px;
     font-size: 18px;
     padding-top: 100px;
   }
+  
   .drivers_route {
-    width: 60%;
+    width: 50%;
     order: 2;
     height: auto;
-    padding-top: 60px;
+    margin-top: 60px;
   }
   .easy_container{
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
   }
   .apps{
@@ -763,11 +849,33 @@ padding-top: 60px;
 
 }
 @media (min-width:1300px){
-  .easy_pay{
+  .easy_pay p{
     font-size: 18px;
+  }
+  .easy_pay_sub{
+    font-size: 22px;
+  }
+  #easy_pay_1 p{
+    font-size: 18px;
+  }
+  #easy_pay_1 h3{
+    font-size:22px;
+  }
+  .drivers_route, .wireless {
+    width: 35%;
+    
   }
 }
 
+@media( min-width-1500px){
+  #easy_pay_1 {
+    padding-left: 0px;
+}
+.easy_pay {
+  padding-top: 0px;
+}
+
+}
 .modalidad {
   display: flex;
   justify-content: center;
@@ -812,7 +920,7 @@ padding-top: 60px;
 
 /* --------------------------------conductores */
 .start {
-  padding-top: 60px;
+  margin-top: 60px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -825,7 +933,7 @@ padding-top: 60px;
   padding-bottom: 80px;
 }
 .wireless {
-  padding-top: 60px;
+  margin-top: 60px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -842,12 +950,7 @@ padding-top: 60px;
   width: 100%;
 
 }
-#casa_1, #casa_2{
-  font-size: 13px;
-  padding:0;
-  width: 170px;
-  
-}
+
 
 /* ---------------------------------FOOTER */
 
@@ -908,7 +1011,14 @@ padding-top: 60px;
 #playstore-footer,#appstore-footer{
   width: 100px;
   height: auto;
+  cursor:pointer;
 }
+#appstore:hover,#appstore-footer:hover{
+  transform: scale(1.01);
+  }
+  #playstore:hover,#playstore-footer:hover{
+    transform: scale(1.01);
+    }
 
 .footer-links-3{
   display: none;
@@ -970,7 +1080,7 @@ padding-top: 60px;
 .copy{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .map{
   display:none;

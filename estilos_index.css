@@ -242,7 +242,7 @@ ul li {
   .menu_superior li p:hover{
       
       background-color: rgb(255, 255, 255);
-      transform: scale(1.2);
+      transform: scale(1.1);
       color: #f90;
   }  
   
@@ -373,6 +373,7 @@ h1 {
   top: 18px;
 }
 
+
 /* ---------------------------contenido */
 
 .titulo {
@@ -382,11 +383,30 @@ h1 {
   font-style: bold;
   font-size: 30px;
   color: rgba(0, 0, 0, 1);
+  animation: moveToBottom 2s ease-in-out;
 }
 .carga,
 .aparca {
   text-align: center;
   font-style: light;
+  animation: moveToBottom2 2s ease-in-out;
+  animation-delay: 1000ms;
+}
+@keyframes moveToBottom {
+  0% {
+    transform: translatey(-1000px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes moveToBottom2 {
+  0% {
+    transform: translatey(-1000px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 article {
@@ -398,10 +418,8 @@ article {
   text-align: center;
   font-size: 18px;
   color: rgba(0, 0, 0, 1);
-  /* opacity: 0;
-  transition: opacity .25s ease-in-out;
-  opacity: 1;
-    */
+  
+
 }
 
 span {
@@ -414,16 +432,39 @@ span {
   justify-content: center;
   flex-direction: column;
   padding-top: 60px;
+  
 }
+.container_article span{
+  animation: moveImg 2s ease-out;
+  animation-delay: 1500ms;
+}
+@keyframes moveImg{
+  0% {
+    transform: translatey(300px);
+    opacity:0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity:.1;
+  }
+}
+
 .slogan {
   font-size: 16px;
 }
 
 .drivers_main {
-  padding-top: 60px;
+  margin-top: 60px;
   max-width: 100%;
   max-height: 100%;
+  box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+  
 }
+.drivers_main:hover{
+  transform: scale(1.01);
+}
+
+
 .logo{
   display: flex;
   align-items: center;
@@ -432,13 +473,15 @@ span {
 .easy_charge_logo{
   width: 70%;
   height: auto;
-  
+  animation: moveToRight 2s ease-in-out ;
+  animation-delay: 1000ms;
 }
 .easy_charge_logo:hover, .easy_charge_logo_2:hover{
-  transform: scale(1.4 );
+  transform: scale(1.1 );
   transform-style: ease-in-out;
   
 }
+
 
 .logo_2{
   display: none;
@@ -447,7 +490,20 @@ span {
 .easy_charge_logo_2{
   width: 70%;
   height: auto;
+  animation: moveToRight 2s ease-in-out ;
+  animation-delay: 1000ms;
   
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-1000px);
+    
+  }
+  100% {
+    transform: translateX(0px);
+    
+  }
 }
 /* @media (min-width: 768px) {
   .drivers_main {
@@ -488,8 +544,8 @@ span {
   }
   .drivers_main {
     width: 50%;
-    padding-top:150px;
-    padding-bottom: 150px;
+    margin-top:150px;
+    margin-bottom: 150px;
     height: auto;
   }
   .logo{
@@ -532,7 +588,7 @@ span {
 .modalidad_1 {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   
@@ -581,8 +637,6 @@ span {
   text-decoration: none;
   padding: 10px;
   margin-right: 20px;
-  font-weight: 600;
-  font-size: 14px;
   border-radius: 6px;
   border: none;
   display: flex;
@@ -601,14 +655,22 @@ span {
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.38));
   text-decoration: none;
   padding: 10px;
-  font-weight: 600;
-  font-size: 14px;
   border-radius: 6px;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.boton_ctu-1 a, .boton_ctu-2 a {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  
+} 
 .boton_ctu-1:hover{
   background-color: #000;
 }
@@ -625,24 +687,17 @@ span {
   color:#fff
 }
 
-.boton_ctu-1 a,
-.boton_ctu-2 a {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  width: 125px;
-  height: 46px;
-  font-size: 18px;
-  cursor: pointer;
-  text-decoration:none;
-  color: black;
-  font-size: 14px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (min-width:768px){
+  .boton_ctu-1, .boton_ctu-2{
+    width: 170px;
+  }
+  .boton_ctu-1 a, .boton_ctu-2 a {
+   
+    font-size: 18px;
+    
+    
+  } 
 }
-
 
 .modalidad_container {
   display: flex;
@@ -651,17 +706,19 @@ span {
   align-items: center;
 }
 .mobility {
-  padding-top: 60px;
+  margin-top: 60px;
   width: 100%;
   max-height: 100%;
+  filter: brightness(1.05) contrast(1.1);
+  box-shadow: 4px -2px 33px -10px rgba(0,0,0,0.39);
 }
 .mobility:hover{
-  transform:scale(1.2)
+  transform:scale(1.01)
 }
 
 @media (min-width: 768px) {
   .mobility {
-    padding-top: 60px;
+    margin-top: 100px;
     width: 100%;
     height: auto;
   }
@@ -691,11 +748,14 @@ span {
 #appstore {
   width: 150px;
   height: 63px;
+  cursor:pointer;
 }
 #playstore {
   width: 150px;
   height: 63px;
+  cursor:pointer;
 }
+
 
 .saber_container {
   display: flex;
@@ -723,10 +783,12 @@ span {
   #appstore {
     width: 250px;
     height: 126px;
+    cursor:pointer;
   }
   #playstore {
     width: 250px;
     height: 126px;
+    cursor:pointer;
   }
 }
 @media (min-width:1024px){
@@ -762,7 +824,11 @@ span {
 .drivers_route {
   width: 100%;
   height: auto;
-  padding-top: 60px;
+  margin-top: 60px;
+  
+}
+.drivers_route:hover{
+  transform: scale(1.01);
 }
 .easy_pay {
   display: flex;
@@ -793,7 +859,12 @@ span {
 .easy_img {
   width: 100%;
   height: auto;
-  padding-top: 60px;
+  margin-top: 60px;
+  box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+  
+}
+.easy_img:hover{
+  transform: scale(1.01);
 }
 
 
@@ -816,6 +887,8 @@ span {
     flex-grow: 0;
     height: auto;
     padding-top: 60px;
+    
+    
   }
   .app_container{
     display: flex;
@@ -842,8 +915,7 @@ span {
     width: 55%;
     order:1;
     height: auto;
-   
-    padding-right: 10%;
+   margin-right: 10%;
   }
 }
 
@@ -869,6 +941,7 @@ span {
 .negocio_truck {
   width: 100%;
   height: 317px;
+  box-shadow: 4px -2px 20px 2px rgba(0,0,0,0.39);
 }
 .conductor_mod_a,
 .negocio_truck_a {
@@ -900,6 +973,7 @@ overflow:hidden;
     filter:sepia(20%);
     transform:scale(0.98);transform:scale(0.98);
     overflow:hidden;
+}
 }
 @media (min-width: 1024px) {
   .conductor_mod_a,
@@ -952,6 +1026,132 @@ overflow:hidden;
   background-color: #79c93a;
   color: white;
 }
+
+/* ---------------------------------modal ayuda */
+
+
+
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: inherit;
+}
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font: 16px/1.5 sans-serif;
+} */
+
+.btn-group {
+  text-align: center;
+}
+
+.open-modal {
+  font-weight: bold;
+  background: var(--blue);
+  color: var(--white);
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal.left .modal-dialog,
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 320px;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+	.modal.left .modal-content,
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	.modal.left .modal-body,
+	.modal.right .modal-body {
+		padding: 15px 15px 80px;
+	}
+
+/*Left*/
+	.modal.left.fade .modal-dialog{
+		left: -320px;
+		-webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+		        transition: opacity 0.3s linear, left 0.3s ease-out;
+	}
+	
+	.modal.left.fade.in .modal-dialog{
+		left: 0;
+	}
+        
+/*Right*/
+	.modal.right.fade .modal-dialog {
+		right: -320px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.3s linear, right 0.3s ease-out;
+	}
+	
+	.modal.right.fade.in .modal-dialog {
+		right: 0;
+	}
+
+/* ----- MODAL STYLE ----- */
+	.modal-content {
+		border-radius: 0;
+		border: none;
+	}
+
+	.modal-header {
+		border-bottom-color: #EEEEEE;
+		background-color: #FAFAFA;
+	}
+
+/* ----- v CAN BE DELETED v ----- */
+
+
+.demo {
+	padding-top: 60px;
+	padding-bottom: 110px;
+}
+
+.btn-demo {
+	margin: 15px;
+	padding: 10px 15px;
+	border-radius: 0;
+	font-size: 16px;
+	background-color: #FFFFFF;
+}
+
+.btn-demo:focus {
+	outline: 0;
+}
+
+
 
 
 /* ---------------------------------FOOTER */
@@ -1013,7 +1213,14 @@ overflow:hidden;
 #playstore-footer,#appstore-footer{
   width: 100px;
   height: auto;
+  cursor:pointer;
 }
+#appstore:hover,#appstore-footer:hover{
+  transform: scale(1.01);
+  }
+  #playstore:hover,#playstore-footer:hover{
+    transform: scale(1.01);
+    }
 
 .footer-links-3{
   display: none;
@@ -1075,7 +1282,7 @@ overflow:hidden;
 .copy{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .map{
   display:none;
@@ -1097,3 +1304,53 @@ overflow:hidden;
   
   }
 }
+
+/* -------------------cookies */
+/*Cookie Consent Begin*/
+#cookieConsent {
+  background-color: rgba(20,20,20,0.8);
+  min-height: 26px;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 26px;
+  padding: 8px 0 8px 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  z-index: 9999;
+}
+#cookieConsent a {
+  color: #4B8EE7;
+  text-decoration: none;
+}
+#closeCookieConsent {
+  
+  display: block;
+  float: right;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: -15px 0 0 0;
+  font-weight: bold;
+}
+#closeCookieConsent:hover {
+  color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+  background-color: #F90;
+  color: #000;
+  display: block;
+  border-radius: 5px;
+  padding: 0 20px;
+  cursor: pointer;
+  float: right;
+  margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+  background-color: black;
+  color: white;
+  
+}
+/*Cookie Consent End*/

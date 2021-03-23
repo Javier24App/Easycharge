@@ -244,7 +244,7 @@ ul li {
   .menu_superior li p:hover{
       
       background-color: rgb(255, 255, 255);
-      transform: scale(1.2);
+      transform: scale(1.1);
       color: #f90;
   }  
   
@@ -645,6 +645,15 @@ position: relative;
   color: #fff;
 }
 
+/* ---------------------------------saber más landing */
+
+.container_saber{
+  padding-top:100px;
+  margin: 30px;
+  
+}
+
+
 
 /* ---------------------------------FOOTER */
 
@@ -707,6 +716,12 @@ position: relative;
     width: 100px;
     height: auto;
   }
+  #appstore:hover,#appstore-footer:hover{
+    transform: scale(1.01);
+    }
+    #playstore:hover,#playstore-footer:hover{
+      transform: scale(1.01);
+      }
   
   .footer-links-3{
     display: none;
@@ -768,7 +783,7 @@ position: relative;
   .copy{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .map{
     display:none;

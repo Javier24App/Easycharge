@@ -230,7 +230,7 @@ ul li {
   }
   .menu_superior li p:hover {
     background-color: rgb(255, 255, 255);
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #f90;
   }
 }
@@ -356,11 +356,30 @@ h1 {
   font-style: bold;
   font-size: 30px;
   color: rgba(0, 0, 0, 1);
+  animation: moveToBottom 2s ease-in-out;
 }
 .carga,
 .aparca {
   text-align: center;
   font-style: light;
+  animation: moveToBottom2 2s ease-in-out;
+  animation-delay: 1000ms;
+}
+@keyframes moveToBottom {
+  0% {
+    transform: translatey(-1000px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+@keyframes moveToBottom2 {
+  0% {
+    transform: translatey(-1000px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 article {
@@ -452,10 +471,22 @@ span {
 .easy_charge_logo {
   width: 70%;
   height: auto;
+  animation: moveToRight 2s ease-in-out ;
+  animation-delay: 1000ms;
+}
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-1000px);
+    
+  }
+  100% {
+    transform: translateX(0px);
+    
+  }
 }
 .easy_charge_logo:hover,
 .easy_charge_logo_2:hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
   transform-style: ease-in-out;
 }
 /* -----------------------------ctu modalidad */
@@ -504,7 +535,7 @@ span {
 
 #registro_boton {
   cursor: pointer;
-  width: 150px;
+  width: 200px;
   height: 46px;
 }
 .boton_ctu-1 a {
@@ -580,14 +611,23 @@ span {
   width: 150px;
   height: 63px;
 }
+#appstore:hover,#appstore-footer:hover{
+  transform: scale(1.01);
+  }
+  #playstore:hover,#playstore-footer:hover{
+    transform: scale(1.01);
+    }
 
 .saber_container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-top: 60px;
   cursor: pointer;
 }
 #saber_mas {
+  margin-top: 60px;
   justify-content: center;
   align-items: center;
   background-color: rgb(179, 175, 175);
@@ -623,7 +663,11 @@ span {
 .drivers_route {
   width: 100%;
   height: auto;
-  padding-top: 60px;
+  margin-top: 60px;
+  box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+}
+.drivers_route:hover{
+  transform: scale(1.01);
 }
 .easy_pay {
   display: flex;
@@ -642,6 +686,7 @@ span {
 }
 .easy_pay p {
   padding: 0;
+  font-size: 18px;
 }
 .simple {
   font-size: 18px;
@@ -663,7 +708,7 @@ span {
     padding-top: 100px;
   }
   .drivers_route {
-    width: 60%;
+    width: 40%;
     order: 2;
     height: auto;
     padding-top: 60px;
@@ -851,8 +896,12 @@ span {
 
 .start {
   max-width: 100%;
+  box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+  
 }
-
+.start:hover{
+  transform: scale(1.01);
+}
 .aparca {
   padding-bottom: 60px;
 }
@@ -976,7 +1025,7 @@ span {
 .copy {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .map {
   display: none;
