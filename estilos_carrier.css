@@ -534,11 +534,30 @@ h1 {
     font-family: Lato;
     font-size: 24px;
     color: rgba(0, 0, 0, 1);
+    animation: moveToBottom 2s ease-in-out;
   }
   .carga,
   .aparca {
     text-align: center;
     font-style: light;
+    animation: moveToBottom2 2s ease-in-out;
+    animation-delay: 1000ms;
+  }
+  @keyframes moveToBottom {
+    0% {
+      transform: translatey(-1000px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  @keyframes moveToBottom2 {
+    0% {
+      transform: translatey(-1000px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
   }
   
   article {
@@ -566,12 +585,43 @@ h1 {
   .slogan {
     font-size: 16px;
   }
-  
+  .logo_2{
+    display: flex;
+    justify-content: center;
+    align-self:center;
+  }
+  .easy_charge_logo_2 {
+    width: 70%;
+    margin: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 1000ms;
+  }
+ 
+.easy_charge_logo_2:hover {
+  transform: scale(1.1);
+  transform-style: ease-in-out;
+}
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(00px);
+  }
+}  
   .start {
-    padding-top: 100px;
+    margin-top: 100px;
     width: 100%;
     height: auto;
+    box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
   }
+  .start:hover{
+    transform: scale(1.01);
+    }
   
   @media (min-width: 1024px) {
     .container_article {
@@ -604,7 +654,7 @@ h1 {
       font-size: 18px;
     }
     .start {
-      padding-top: 100px;
+     
       width: 60%;
       height: auto;
     }
@@ -626,18 +676,12 @@ h1 {
       font-size: 30px;
     }
     .start {
-      padding-top: 100px;
-      width: 60%;
+      
       min-height: auto;
     }
   }
-  @media (min-width: 1600px) {
-    .start {
-      padding-top: 100px;
-      
-      
-    }
-  }
+  
+  
   
   /* -----------------------------ctu modalidad */
   .ctu {
@@ -732,20 +776,64 @@ h1 {
   
   /* ------------------------------wireless */
   .parking_flota{
+    margin-top: 100px;
       max-width: 100%;
+      box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
   }
+    .parking_flota:hover{
+      transform: scale(1.01);
+    }
+    
   
-/*   @media (min-width:768px){
+  
+  @media (min-width:1024px){
   .wireless_container{
     display: flex;
-    justify-content: space-around;
-    padding-top: 100px;
+    justify-content: center;
+    padding-top: 70px;
+    align-items: center;
   }
   
   .wireless{
     width: 50%;
   }
-  } */
+  .parking_flota{
+    margin-bottom: 100px;
+    margin-top: 0;
+    width: 80%;
+    
+  }
+  .caracteristicas_plan_info{
+    margin-left: 60px;
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  } 
+  @media (min-width:1124px){
+    .wireless_container{
+      display: flex;
+      justify-content: center;
+      padding-top: 100px;
+      align-items: center;
+    }
+    
+    .wireless{
+      width: 50%;
+    }
+    .parking_flota{
+      margin-bottom: 100px;
+      width: 60%;
+      
+    }
+    #wireless_img{
+      width: 60%;
+    }
+    } 
+    @media (min-width:1424px){
+      #wireless_img{
+        width: 40%;
+      }
+      }   
   
   /* -------------------------------app */
   
@@ -857,6 +945,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
   }
   .contacta{
       text-align: center;
@@ -951,7 +1040,7 @@ h1 {
   
   /* --------------------------------conductores */
   .start {
-    padding-top: 60px;
+   
     max-width: 100%;
     max-height: 100%;
   }

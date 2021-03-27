@@ -234,3 +234,45 @@ $(function(){
 }); 
 
 /* ----------------------------modal */
+
+/* -----------------------------HOVER MOBILE */
+
+/* $(".boton_ctu-1").on('click touchend', function(e) {
+  $(this).css("color","black");
+  console.log($(this).attr('name'));
+}); */
+
+$(".boton_ctu-1").on('click touchend', function(e) {
+  $(this).css("background color","black");
+  
+});
+
+$(".boton_ctu-2").on('click touchend', function(c) {
+  $(this).css("background color","black");
+  
+});
+
+/* -----------------------carrousel */
+
+$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
+  });
+});

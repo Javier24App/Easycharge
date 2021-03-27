@@ -321,6 +321,9 @@ ul li {
   --web-action-target: LANDING_MENU_LATERAL.html;
   cursor: pointer;
 }
+#menu_superior_p{
+  margin-top: 20px;
+}
 .account-circle_Class {
   fill: rgba(0, 0, 0, 1);
   stroke: rgba(112, 112, 112, 0.22);
@@ -534,13 +537,31 @@ h1 {
     font-family: Lato;
     font-size: 30px;
     color: rgba(0, 0, 0, 1);
+    animation: moveToBottom 2s ease-in-out;
   }
   .carga,
   .aparca {
     text-align: center;
     font-style: light;
+    animation: moveToBottom2 2s ease-in-out;
+  animation-delay: 1000ms;
   }
-  
+  @keyframes moveToBottom {
+    0% {
+      transform: translatey(-1000px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  @keyframes moveToBottom2 {
+    0% {
+      transform: translatey(-1000px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
   article {
     padding-top: 30px;
     display: flex;
@@ -568,9 +589,43 @@ h1 {
   }
   
   .start {
-    padding-top: 100px;
+    margin-top: 100px;
     width: 100%;
     height: auto;
+    box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+  }
+  
+  .start:hover{
+  transform: scale(1.01);
+  }
+  .logo_2{
+    display: flex;
+    justify-content: center;
+    align-self:center;
+  }
+  .easy_charge_logo_2 {
+    width: 70%;
+    margin: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveToRight 2s ease-in-out;
+    animation-delay: 1000ms;
+  }
+ 
+.easy_charge_logo_2:hover {
+  transform: scale(1.1);
+  transform-style: ease-in-out;
+}
+
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(-1000px);
+    }
+    100% {
+      transform: translateX(00px);
+    }
   }
   
   @media (min-width: 1024px) {
@@ -604,7 +659,7 @@ h1 {
       font-size: 18px;
     }
     .start {
-      padding-top: 100px;
+      
       width: 60%;
       height: auto;
     }
@@ -626,23 +681,18 @@ h1 {
       font-size: 30px;
     }
     .start {
-      padding-top: 100px;
+      margin-top: 100px;
       width: 60%;
       min-height: auto;
     }
   }
-  @media (min-width: 1600px) {
-    .start {
-      padding-top: 100px;
-      
-      
-    }
-  }
+ 
+  
   
   /* -----------------------------ctu modalidad */
   .ctu, .ctu_2 {
     padding-top: 60px;
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
   }
   
@@ -654,6 +704,14 @@ h1 {
     display: flex;
     justify-content: space-around;
   }
+  @media (min-width: 768px) {
+    .ctu{
+     
+      font-size: 22px;
+      
+    } 
+  }
+
   @media (min-width: 1024px) {
     .ctu,
     .ctu_2 {
@@ -711,7 +769,8 @@ h1 {
   }
   
   .boton_ctu-1 a:hover,.boton_ctu-2 a:hover{
-    color:#fff
+    color:#fff;
+    text-decoration: none;
   }
   #saber_mas {
     justify-content: center;
@@ -751,11 +810,19 @@ width: 200px;
 
   
   /* ------------------------------wireless */
+  .wireless{
+    box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+  }
+  .wireless:hover{
+    transform: scale(1.01);
+    }
+  
+  
   @media (min-width:768px){
   .wireless_container{
     display: flex;
     justify-content: space-around;
-    padding-top: 100px;
+    margin-top: 100px;
   }
   
   .wireless{
@@ -838,7 +905,12 @@ width: 200px;
   .drivers_route {
     width: 100%;
     height: auto;
-    padding-top: 60px;
+    margin-top: 100px;
+    margin-left: 30px;
+    box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
+  }
+  .drivers_route:hover {
+    transform: scale(1.01);
   }
   .easy_pay {
     display: flex;
@@ -857,9 +929,14 @@ width: 200px;
   }
   .easy_pay p {
     padding: 0;
+    padding-left: 30px;
+
   }
   .simple {
     font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
   }
   .easy {
     padding: 0;
@@ -882,7 +959,7 @@ width: 200px;
         font-size: 36px;
     }
     .drivers_route {
-      width: 50%;
+      width: 40%;
       order: 2;
       height: auto;
       padding-top: 60px;
@@ -899,7 +976,12 @@ width: 200px;
   }
   @media (min-width:1300px){
     .easy_pay{
-      font-size: 14px;
+      font-size: 18px;
+    }
+    .simple {
+      font-size: 22px;
+      font-weight: bold;
+      
     }
   }
   
@@ -947,7 +1029,7 @@ width: 200px;
   
   /* --------------------------------conductores */
   .start {
-    padding-top: 60px;
+    
     max-width: 100%;
     max-height: 100%;
   }
@@ -959,7 +1041,7 @@ width: 200px;
     padding-top: 20px;
   }
   .wireless {
-    padding-top: 60px;
+    margin-top: 60px;
     max-width: 100%;
     max-height: 100%;
   }
@@ -976,7 +1058,18 @@ width: 200px;
     width: 100%;
   
   }
-  
+  /* ---------------------------------slides carrousel */
+#compañias{
+  font-size: 22px;
+  text-align: center;
+}
+  .slide img{
+   /*  width: 500px;
+    height: auto; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
   
   /* ---------------------------------FOOTER */
 
