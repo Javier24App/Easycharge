@@ -811,3 +811,38 @@ position: relative;
     width: 80%;
     margin: 100px;
   }
+  h3{
+    padding: 60px;
+  }
+  .img_system{
+    width: 500px;
+    height: auto;
+  }
+  .wifi_logo{
+    width:100px
+  }
+  .qualcomm{
+    width: 150px;
+  }
+  .logo_google{
+    width: 50px;
+    padding-left: 30px;
+  }
+  .siemens{
+    width: 100px;
+    padding-left: 30px;
+  }
+  @media (min-width:768px){
+    .container_saber{
+      width: 80%;
+      padding-left: 20%;
+    
+    }
+  }
+  @media (min-width:1024px){
+    .container_saber{
+      width: 60%;
+      padding-left: 30%;
+    text-align: left;
+    }
+  }

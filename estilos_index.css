@@ -451,14 +451,14 @@ span {
   justify-content: center;
 }
 .easy_charge_logo {
-  width: 70%;
+  width: 60%;
   height: auto;
   animation: moveToRight 2s ease-in-out;
   animation-delay: 1000ms;
 }
 .easy_charge_logo:hover,
 .easy_charge_logo_2:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transform-style: ease-in-out;
 }
 
@@ -466,18 +466,19 @@ span {
   display: none;
 }
 .easy_charge_logo_2 {
-  width: 70%;
+  width: 60px;
   height: auto;
   animation: moveToRight 2s ease-in-out;
   animation-delay: 1000ms;
 }
+
 
 @keyframes moveToRight {
   0% {
     transform: translateX(-1000px);
   }
   100% {
-    transform: translateX(00px);
+    transform: translateX(0px);
   }
 }
 /* @media (min-width: 768px) {
@@ -531,6 +532,11 @@ span {
   .logo_2 {
     display: flex;
     width: fit-content;
+    
+  }
+  .easy_charge_logo_2{
+    width: 40%;
+    margin-left: 200px;
   }
   /* .titulo, .carga, .aparca{
   flex-basis: 2;
@@ -573,7 +579,7 @@ span {
 @media (min-width: 768px) {
   .ctu,
   .ctu_2 {
-    padding-top: 0px;
+    padding-top: 100px;
     padding-bottom: 150px;
     font-size: 26px;
   }
@@ -725,7 +731,7 @@ span {
   justify-content: center;
   align-items: center;
   background-color: rgb(179, 175, 175);
-  height: 36px;
+  
   font-size: 12px;
   line-height: 17px;
 }
