@@ -462,7 +462,7 @@ span {
   margin-top: 100px;
   width: 100%;
   height: auto;
-  animation: moveImg 2s ease-out;
+/*   animation: moveImg 2s ease-out; */
   animation-delay: 1500ms;
   filter: brightness(1.0) contrast(1.0);
   box-shadow: 4px -2px 50px 5px rgba(0,0,0,0.39);
